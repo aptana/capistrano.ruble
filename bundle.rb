@@ -4,7 +4,7 @@ bundle 'Capistrano' do |bundle|
   bundle.author = 'Mark Cornick'
   bundle.contact_email_rot_13 = 'znex@ivtrg.pbz'
   bundle.description =  <<END
-Ported from Textmate Bundle written by Mark Cornick:
+Ported from TextMate Bundle written by Mark Cornick:
 
 Original TextMate bundle Copyright (C) 2008 Mark Cornick of Viget Labs (http://www.viget.com/)
 END

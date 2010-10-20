@@ -21,6 +21,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 This bundle is licensed under the MIT license.
 
-## Other Stuff
+## Bugs/Requests
 
 * You can [report a bug or request a feature here](http://github.com/aptana/capistrano.ruble/issues)
