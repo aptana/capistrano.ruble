@@ -12,6 +12,8 @@ END
   bundle.menu 'Capistrano' do |main_menu|
     main_menu.command 'Deploy'
     main_menu.separator
+    main_menu.command 'Open Capistrano Documentation'
+    main_menu.separator
     main_menu.menu 'Application Servers' do |submenu|
       submenu.command 'Restart App Servers'
       submenu.command 'Start App Servers'
