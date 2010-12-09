@@ -1,7 +1,7 @@
 require 'ruble'
 
 command 'Rollback' do |cmd|
-  cmd.key_binding = 'M1+M3+C'
+  # cmd.key_binding = 'M1+M3+C'
   cmd.output = :discard
   cmd.input = :none
   cmd.invoke do |context|
