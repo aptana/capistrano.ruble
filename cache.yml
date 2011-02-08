@@ -128,14 +128,24 @@ children:
   displayName: Capistrano
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Clean Up Old Releases, inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: discard, path: commands/clean_up_old_releases.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Clean Up Old Releases
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/clean_up_old_releases.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Deploy
+  input: [none]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+C]
@@ -145,49 +155,149 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Deploy With Migrations, inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: discard, path: commands/deploy_with_migrations.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Disable Application, inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: discard, path: commands/disable_application.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Display Pending Commits, inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: discard, path: commands/display_pending_commits.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Display Pending Diffs, inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: create_new_document, path: commands/display_pending_diffs.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Enable Application, inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: discard, path: commands/enable_application.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Migrate Database, inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: discard, path: commands/migrate_database.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Open Capistrano Documentation, inputPath: null, keyBindingMap: null,
-  outputPath: null, outputType: discard, path: commands/open_capistrano_documentation.rb,
-  runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Restart App Servers, inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: discard, path: commands/restart_app_servers.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Rollback, inputPath: null, keyBindingMap: null, outputPath: null, outputType: discard,
-  path: commands/rollback.rb, runType: current_thread, scope: null, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Start App Servers, inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: discard, path: commands/start_app_servers.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Stop App Servers, inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: discard, path: commands/stop_app_servers.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Deploy With Migrations
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/deploy_with_migrations.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Disable Application
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/disable_application.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Display Pending Commits
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/display_pending_commits.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Display Pending Diffs
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: create_new_document
+  path: commands/display_pending_diffs.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Enable Application
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/enable_application.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Migrate Database
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/migrate_database.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Open Capistrano Documentation
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/open_capistrano_documentation.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Restart App Servers
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/restart_app_servers.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Rollback
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/rollback.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Start App Servers
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/start_app_servers.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Stop App Servers
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/stop_app_servers.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
 copyright: null
 customProperties: {contact_email_rot_13: znex@ivtrg.pbz}
 decreaseIndentMarkers: &id002 {}
