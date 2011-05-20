@@ -8,10 +8,9 @@ def cap(context, the_target)
   if File.directory?(multistage_dir)
     stages = Dir.entries(multistage_dir).select{|x| x.match(/\.rb$/)}.collect{|x| x.gsub(/\.rb$/,'')}
     if stages.any?
-      # FIXME Need to convert to Ruble::UI combo/menu!
-      dialog = `CocoaDialog dropdown --title "Multistage" --no-newline --text "Please select a stage." --items "#{stages.join('" "')}" --button1 "OK"`
-      (button,selected) = dialog.split(/\n/)
-      target = stages[selected.to_i] + ' '
+      require 'ruble/ui'
+      selected = Ruble::UI.request_item(:title => 'Multistage', :prompt => 'Please select a stage.', :items => stages)
+      target = selected + ' ' if selected
     end
   end
   target += the_target
