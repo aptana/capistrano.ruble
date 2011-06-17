@@ -147,8 +147,7 @@ children:
   displayName: Deploy
   input: [none]
   inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+C]
+  keyBindingMap: null
   outputPath: null
   outputType: discard
   path: commands/deploy.rb
