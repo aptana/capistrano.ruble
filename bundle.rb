@@ -3,6 +3,7 @@ require 'ruble'
 bundle 'Capistrano' do |bundle|
   bundle.author = 'Mark Cornick'
   bundle.contact_email_rot_13 = 'znex@ivtrg.pbz'
+  bundle.repository = "git://github.com/aptana/capistrano.ruble.git"
   bundle.description =  <<END
 Ported from TextMate Bundle written by Mark Cornick:
 
