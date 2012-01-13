@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Enable Application' do |cmd|
+command t(:enable_application) do |cmd|
   cmd.output = :discard
   cmd.input = :none
   cmd.invoke do |context|

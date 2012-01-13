@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Deploy' do |cmd|
+command t(:deploy) do |cmd|
   # cmd.key_binding = 'M1+M3+C'
   cmd.output = :discard
   cmd.input = :none

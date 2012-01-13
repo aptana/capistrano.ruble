@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Open Capistrano Documentation' do |cmd|
+command t(:open_docs) do |cmd|
   cmd.output = :discard
   cmd.input = :none
   cmd.invoke do |context|

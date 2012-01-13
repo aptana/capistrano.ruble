@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Clean Up Old Releases' do |cmd|
+command t(:clean_up_old_releases) do |cmd|
   cmd.output = :discard
   cmd.input = :none
   cmd.invoke do |context|
