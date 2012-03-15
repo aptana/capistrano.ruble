@@ -3,11 +3,8 @@ require 'ruble'
 bundle t(:bundle_name) do |bundle|
   bundle.author = 'Mark Cornick'
   bundle.contact_email_rot_13 = 'znex@ivtrg.pbz'
-  bundle.description =  <<END
-Ported from TextMate Bundle written by Mark Cornick:
-
-Original TextMate bundle Copyright (C) 2008 Mark Cornick of Viget Labs (http://www.viget.com/)
-END
+  bundle.copyright = "Original TextMate bundle Copyright (C) 2008 Mark Cornick of Viget Labs (http://www.viget.com/)"
+  bundle.description = t(:bundle_description)
 
   bundle.menu t(:bundle_name) do |main_menu|
     main_menu.command t(:deploy)
