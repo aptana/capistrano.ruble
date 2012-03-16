@@ -1,6 +1,6 @@
 require 'ruble'
 
-bundle 'Capistrano' do |bundle|
+bundle t(:bundle_name) do |bundle|
   bundle.author = 'Mark Cornick'
   bundle.contact_email_rot_13 = 'znex@ivtrg.pbz'
   bundle.repository = "git://github.com/aptana/capistrano.ruble.git"
@@ -10,31 +10,31 @@ Ported from TextMate Bundle written by Mark Cornick:
 Original TextMate bundle Copyright (C) 2008 Mark Cornick of Viget Labs (http://www.viget.com/)
 END
 
-  bundle.menu 'Capistrano' do |main_menu|
-    main_menu.command 'Deploy'
+  bundle.menu t(:bundle_name) do |main_menu|
+    main_menu.command t(:deploy)
     main_menu.separator
-    main_menu.command 'Open Capistrano Documentation'
+    main_menu.command t(:open_docs)
     main_menu.separator
-    main_menu.menu 'Application Servers' do |submenu|
-      submenu.command 'Restart App Servers'
-      submenu.command 'Start App Servers'
-      submenu.command 'Stop App Servers'
+    main_menu.menu t(:application_servers) do |submenu|
+      submenu.command t(:restart_app_servers)
+      submenu.command t(:start_app_servers)
+      submenu.command t(:stop_app_servers)
     end
-    main_menu.menu 'Database Servers' do |submenu|
-      submenu.command 'Deploy With Migrations'
-      submenu.command 'Migrate Database'
+    main_menu.menu t(:database_servers) do |submenu|
+      submenu.command t(:deploy_with_migrations)
+      submenu.command t(:migrate_database)
     end
-    main_menu.menu 'Web Servers' do |submenu|
-      submenu.command 'Disable Application'
-      submenu.command 'Enable Application'
+    main_menu.menu t(:web_servers) do |submenu|
+      submenu.command t(:disable_application)
+      submenu.command t(:enable_application)
     end
-    main_menu.menu 'Pending Operations' do |submenu|
-      submenu.command 'Display Pending Commits'
-      submenu.command 'Display Pending Diffs'
+    main_menu.menu t(:pending_operations) do |submenu|
+      submenu.command t(:display_pending_commits)
+      submenu.command t(:display_pending_diffs)
     end
-    main_menu.menu 'Maintenance' do |submenu|
-      submenu.command 'Rollback'
-      submenu.command 'Clean Up Old Releases'
+    main_menu.menu t(:maintenance) do |submenu|
+      submenu.command t(:rollback)
+      submenu.command t(:clean_up_old_releases)
     end
   end
 end

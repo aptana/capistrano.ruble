@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Display Pending Commits' do |cmd|
+command t(:display_pending_commits) do |cmd|
   # cmd.key_binding = 'M1+M3+C'
   cmd.output = :discard
   cmd.input = :none

@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Disable Application' do |cmd|
+command t(:disable_application) do |cmd|
   cmd.output = :discard
   cmd.input = :none
   cmd.invoke do |context|
